@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<style>
+        * {
+            box-sizing: border-box;
+        }
+
+                .column {
+            float: left;
+            width: 50%;
+            padding: 10px;
+            height: 300px;
+            
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body style="border-width:3px; border-style:solid; border-color:black; padding: 1em;">
+
+    <h1 style="Text-align:center;"><b> Event 1</b></h1>
+        <h4 style="Text-align:center;">Number of available seats: 23</h4>
+
+    <div class="row" style="border-width:3px; border-style:solid; border-color:black; padding: 1em;">
+        <div class="column" style="background-color:white;">
+            <i class="fa fa-user fa-5x" aria-hidden="true"></i>
+        </div>
+        <div class="column" style="background-color:white; Text-align:right;line-height: 40px;">
+            <label for="Name"><b>Name:</label>
+            <input type="text" name="" id="Name"><br>
+
+            <label for="email">Email:</label>
+            <input type="email" name="" id="email"><br>
+
+            <label for="Phone No">Phone No.:</label>
+            <input type="text" name="" id="Phone No"><br>
+
+            <label for="Number of seats">Number of seats:</label>
+            <input type="number" name="2" id="Number of seats" maxlength="4" size="4"><br>
+
+            <label for="attendee2">Name of Attendee 2:</label>
+            <input type="text" name="" id="attendee2"><br>
+
+            <button type="button">Submit</button>
+            <button type="button">Cancel</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
